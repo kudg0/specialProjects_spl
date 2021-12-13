@@ -19,6 +19,7 @@ gulp-template
 │   ├── sass
 │   ├── partials
 │   ├── pages
+│   └── public
 ├── package.json
 ├── README.md
 ├── gulpfile.js
