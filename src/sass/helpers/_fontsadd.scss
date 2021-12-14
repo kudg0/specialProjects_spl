@@ -1,14 +1,24 @@
-@mixin font-face($fontFamily) {
+@mixin font-face($fontFamily, $fontFamily_link, $fontFamily_format) {
   @font-face {
     font-family: '#{$fontFamily}';
-    src: url('fonts/#{$fontFamily}.woff2') format('woff2'),
-      url('fonts/#{$fontFamily}.woff') format('woff');
+    src: url('#{$fontFamily_link}') format('#{$fontFamily_format}');
 
     font-display: swap;
   }
 }
 
-@include font-face('EuclidCircularA-Regular');
-@include font-face('EuclidCircularA-Medium');
-
-@include font-face('GropledBold');
+@include font-face(
+  'MuseoSansCyrl-300',
+  'https://www.spletnik.ru/templates/2017_design/app/fonts/MuseoSansCyrl-300/MuseoSansCyrl-300.woff2',
+  'woff2'
+);
+@include font-face(
+  'MuseoSansCyrl-500',
+  'https://www.spletnik.ru/templates/2017_design/app/fonts/MuseoSansCyrl-500/MuseoSansCyrl-500.woff2',
+  'woff2'
+);
+@include font-face(
+  'MuseoSansCyrl-700',
+  'https://www.spletnik.ru/templates/2017_design/app/fonts/MuseoSansCyrl-700/MuseoSansCyrl-700.woff2',
+  'woff2'
+);

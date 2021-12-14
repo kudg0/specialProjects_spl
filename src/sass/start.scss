@@ -1,12 +1,10 @@
 .startContainer {
-  display: none;
+  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 
   width: 100%;
   height: auto;
-
-  overflow: hidden;
 
   z-index: 2;
 

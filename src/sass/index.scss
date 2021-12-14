@@ -4,12 +4,21 @@
 
 @import 'libs/_aos';
 
-[data-ui-id='post'] {
+// Это стандартный элемент в котором будет лежать весь твой проект
+.post-body.post-body.post-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100vw;
+  margin-left: calc((-100vw + 100%) / 2);
+
   @media (min-width: 649px) {
     @import 'start';
   }
 
   @media (max-width: 650px) {
-    @import 'mobile/mobile.scss';
+    @import 'mobile/start';
   }
 }
