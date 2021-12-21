@@ -12,13 +12,17 @@
   justify-content: flex-start;
 
   width: 100vw;
-  margin-left: calc((-100vw + 100%) / 2);
+  margin-left: calc((-100vw + 1000px) / 2);
 
   @media (min-width: 649px) {
     @import 'start';
   }
 
   @media (max-width: 650px) {
+    & {
+      margin-left: calc((-100vw + 100%) / 2);
+    }
+
     @import 'mobile/start';
   }
 }
