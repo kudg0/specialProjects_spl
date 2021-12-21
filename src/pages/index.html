@@ -4,13 +4,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+<style type="text/css">
+  .post-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
+    width: 100%;
+  }
+  .post-content .content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 1000px;
+  }
+  @media screen and (max-width: 650px){
+    .post-content .content-container{
+      width: 100%;
+      padding: 0.3125rem 1.25rem 1.25rem;
+    }
+  }
+</style>
 <body style="margin: 0; padding: 0;">
-<div class="post-content" style="width: 1000px">
-<div class="post-body">
-  <include src="src/partials/head.html"></include>
-  <include src="src/partials/body.html"></include>
-  <include src="src/partials/script.html"></include>
+
+<div class="post-content">
+<div class="content-container">
+  <div class="post-body">
+    <include src="src/partials/head.html"></include>
+    <include src="src/partials/body.html"></include>
+    <include src="src/partials/script.html"></include>
+  </div>
 </div>
 </div>
 </body>
