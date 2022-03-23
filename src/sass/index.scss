@@ -1,8 +1,8 @@
-@import 'helpers/_base';
-@import 'helpers/_fontsadd';
-@import 'helpers/_mixins';
+@import '_helpers/_base';
+@import '_helpers/_fontsadd';
+@import '_helpers/_mixins';
 
-@import 'libs/_aos';
+@import '_libs/_aos';
 
 // Это стандартный элемент в котором будет лежать весь твой проект
 .post-body.post-body.post-body {
